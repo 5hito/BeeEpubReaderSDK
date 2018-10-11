@@ -35,9 +35,9 @@ if [ -n "$podName" ]; then
     pod trunk push $podName --allow-warnings
 
     echo "更新本地库"
-    pod repo update
-    rm ~/Library/Caches/CocoaPods/search_index.json
-    pod search $sdkName
+    # pod repo update
+    # rm ~/Library/Caches/CocoaPods/search_index.json
+    # pod search $sdkName
 
 else
     echo "没有获取到podspec"
